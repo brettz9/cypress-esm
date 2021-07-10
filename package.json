@@ -1,0 +1,28 @@
+{
+  "name": "cypress-esm",
+  "main": "src/index.js",
+  "type": "module",
+  "version": "0.1.0",
+  "author": "Brett Zamir <brettz9@yahoo.com>",
+  "contributors": [],
+  "description": "Test Cypress with native ESM",
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brettz9/cypress-esm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brettz9/cypress-esm/issues"
+  },
+  "homepage": "https://github.com/brettz9/cypress-esm",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "devDependencies": {
+    "cypress": "^7.7.0"
+  }
+}
