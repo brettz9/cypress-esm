@@ -4,7 +4,7 @@ Steps to reproduce:
 
 1. Clone the repository
 2. Run `npm install`
-3. Run `npm test` (which opens `cypress open`)
+3. Run `npm test` (which runs `cypress open`)
 4. Observe the error message that appears.
 
 The components of significance are:
