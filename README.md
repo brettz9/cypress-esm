@@ -13,7 +13,8 @@ The components of significance are:
     in Node.js to be treated as ESM modules). If removed, the steps above will
     not fail. One can use ESM modules without `type: "module"` by using the
     file extension `.mjs`, but many projects wish to change the default
-    behavior of `.js` so that it too can be interpreted as an ESM file.
+    behavior of `.js` so that it too can be interpreted as an ESM file. So
+    requiring that all other files use `.mjs` is a burden on projects.
 2. Even if changing the contents of `/cypress/plugins/index.js` (which is
     now interpreted as an ESM file because of `type: "module"`), the plugins
     file does not work with ESM-style `export default {}` as would be expected.
