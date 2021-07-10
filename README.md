@@ -23,11 +23,11 @@ The components of significance are:
     file because of `type: "module"`). However, Cypress does not allow the
     plugins file to work with ESM-style `export default {}` exports as one
     would hope. While in theory, Cypress, could require CJS for now and require
-    that users change the plugins file to use the `.cjs` extension (which
-    is always interpreted by Node.js as a CommonJS file), thus allowing users
-    to continue to use `module.exports` in their plugins file until such time
-    as Cypress may support ESM-style exports in plugins files, changing the
-    file to `/cypress/plugins/index.cjs` unfortunately does not work at
-    present either, even if setting a `pluginsFile` option which points to a
-    `cjs` file because Cypress apparently does not support a plugins file with
-    a `.cjs` extension.
+    that `type: "module"` ESM users change the plugins file to use the
+    `.cjs` extension (which is always interpreted by Node.js as a CommonJS
+    file), thus allowing users to continue to use `module.exports` in their
+    plugins file until such time as Cypress may support ESM-style exports
+    in plugins files, changing the file to `/cypress/plugins/index.cjs`
+    unfortunately does not work at present either, even if setting a
+    `pluginsFile` option in Cypress config to point to a `cjs` file because
+    Cypress apparently does not support a plugins file with a `.cjs` extension.
